@@ -11,7 +11,7 @@ const Navbar = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     }
 
-    const handleScroll = (event, targetId ) => {
+    const handleScroll = (event, targetId) => {
 
         event.preventDefault();
         const targetElement = document.getElementById(targetId);
@@ -22,7 +22,7 @@ const Navbar = () => {
                 behavior: "smooth"
             })
         }
-        setIsMobileMenuOpen(false);
+        setIsMobileMenuOpen(false)
     }
 
   return (
@@ -38,7 +38,7 @@ const Navbar = () => {
                 ) )}
             </div>
             <div className="lg:hidden">
-                <button>
+                <button onClick={toggleMobileMenu }>
                     {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
                 </button>
             </div>
