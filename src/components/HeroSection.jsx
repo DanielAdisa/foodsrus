@@ -1,4 +1,4 @@
-import video from "../assets/hero2.mp4";
+import video from "../assets/hero.mp4";
 import logo from "../assets/logo.png";
 import hero from "../assets/hero.jpeg";
 
